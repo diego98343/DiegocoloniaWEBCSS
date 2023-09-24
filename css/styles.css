@@ -165,7 +165,15 @@ p {
   }
 }
 /* added during recording */
+.underline{
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5) ;
+  margin-left: auto;
+  margin-right: auto;
 
+}
 /*
 =============== 
 Navbar
@@ -205,6 +213,28 @@ Navbar
 .nav-links{
   display: none;
 }
+
+
+
+/*
+=============== 
+fix-navbar
+===============
+
+*/
+
+.navbar-fix{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background-color:var(--clr-white);
+  z-index: 2;
+  box-shadow: var(--light-shadow);
+}
+
+
+
 
 @media screen and (min-width:768px){
 
@@ -260,7 +290,14 @@ Sidebar
   justify-content: center; */
   place-items: center;
   transition: var(--transition);
+  transform: translate(-100%);
 }
+
+.show-sidebar{
+  transform: translate(0);
+}
+
+
 .sidebar-links{
   text-align: center;
 }
@@ -292,12 +329,51 @@ Sidebar
   color: var(--clr-primary-5);
 }
 
+.close-btn{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 3rem;
+  background: transparent;
+  border: transparent;
+  transition: var(--transition);
+  color: #bb2525 ;
+  cursor: pointer;
+}
+
+.close-btn:hover{
+  color: #e66b6b;
+}
 /*
 =============== 
 Hero
 ===============
 */
 /* underline added to globals */
+.hero .underline{ 
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+.hero-img{
+ display: none;
+}
+.hero{
+  background: var(--clr-primary-10);
+}
+.hero-center{
+  min-height: calc(100vh - 5rem);
+  display: grid;
+  place-items:center;
+}
+.hero-info h4{
+  color:var(--clr-grey-5);
+}
+.hero-icons{
+  justify-items: start;
+}
+.hero-btn{
+  margin-top: 1.25rem;s
+}
 
 /*
 =============== 
