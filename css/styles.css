@@ -452,7 +452,7 @@ About
   justify-self: center;
 }
 .section-about{
-  background: linear-gradient(-40deg,rgba(233, 239, 255, 0.8) 43%,rgba(66, 83, 108, 0.276) 75%,rgba(127, 54, 204, 0.191));
+  background: linear-gradient(-40deg,rgba(233, 239, 255, 0.213) 43%,rgba(66, 83, 108, 0.276) 75%,rgba(127, 54, 204, 0.072));
 }
 .about-center{
 
@@ -498,17 +498,53 @@ Services
 */
 /* small screen layout setup */
 .bg-grey{
-  background: var(--clr-grey-10);
+  background:linear-gradient(180deg,rgba(103, 141, 247, 0.121) 30%,rgba(137, 172, 224, 0.205) 75%,rgba(127, 54, 204, 0.309));
 }
 .service-title{
   text-align: center;
 }
-.about-service{
-  text-align: center;
-}
+
 /* bg-grey in globals */
+.single-service{
+  background: var(--clr-white);
+  padding: 3rem 1.5rem;
+  margin: 3rem;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: var(--transition);
+}
+.single-service:hover{
+background: linear-gradient(-40deg,rgba(103, 141, 247, 0.792) 43%,rgba(66, 83, 108, 0.864) 75%,rgba(127, 54, 204, 0.602));
+color:var(--clr-white);
+}
 
+.service-icon{
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.single-service p {
+  transition: var(--transition);
+}
+.single-service:hover p {
+ color: white;
+}
 
+.single-service .underline{
+  width: 3rem;
+  height: 0.12rem;
+  transition: var(--transition);
+}
+.single-service:hover .underline{
+  color: white;
+}
+
+@media screen and (min-width:992px){
+  .service-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+  }
+}
 
 /*
 =============== 
@@ -517,7 +553,7 @@ gap
 */
 
 .gap{
- height: 20rem;
+ height: 15rem;
  background-color: #8ecc36;
  background-image: linear-gradient(63deg,rgba(32, 44, 74, 0.601) 48%,rgba(54, 204, 202, 0.271)),url("/images/pexels-neo-2653362.jpg");
  background-position: 0 0,50%;
