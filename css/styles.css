@@ -452,7 +452,7 @@ About
   justify-self: center;
 }
 .section-about{
-  background: linear-gradient(-40deg,rgba(233, 239, 255, 0.213) 43%,rgba(66, 83, 108, 0.276) 75%,rgba(127, 54, 204, 0.072));
+  background: linear-gradient(-120deg,rgba(233, 239, 255, 0.317) 43%,rgba(66, 83, 108, 0.436) 75%,rgba(127, 54, 204, 0.297));
 }
 .about-center{
 
@@ -499,9 +499,17 @@ Services
 /* small screen layout setup */
 .bg-grey{
   background:linear-gradient(320deg,rgba(103, 141, 247, 0.121) 30%,rgba(137, 172, 224, 0.205) 75%,rgba(127, 54, 204, 0.309));
+  background-color: #8ecc36;
+  background-image: linear-gradient(63deg,rgba(32, 44, 74, 0.601) 48%,rgba(54, 204, 202, 0.271)),url("/images/pexels-neo-2653362.jpg");
+  background-position: 0 0,50%;
+  background-size: auto,cover;
+  background-attachment: scroll,fixed;
+  padding: 50px 20px;
 }
+
 .service-title{
   text-align: center;
+  color: white;
 }
 
 /* bg-grey in globals */
@@ -552,15 +560,7 @@ gap
 ===============
 */
 
-.gap{
- height: 15rem;
- background-color: #8ecc36;
- background-image: linear-gradient(63deg,rgba(32, 44, 74, 0.601) 48%,rgba(54, 204, 202, 0.271)),url("/images/pexels-neo-2653362.jpg");
- background-position: 0 0,50%;
- background-size: auto,cover;
- background-attachment: scroll,fixed;
- padding: 50px 20px;
-}
+
 
 
 
