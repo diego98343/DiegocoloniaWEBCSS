@@ -498,7 +498,7 @@ Services
 */
 /* small screen layout setup */
 .bg-grey{
-  background:linear-gradient(180deg,rgba(103, 141, 247, 0.121) 30%,rgba(137, 172, 224, 0.205) 75%,rgba(127, 54, 204, 0.309));
+  background:linear-gradient(320deg,rgba(103, 141, 247, 0.121) 30%,rgba(137, 172, 224, 0.205) 75%,rgba(127, 54, 204, 0.309));
 }
 .service-title{
   text-align: center;
