@@ -452,9 +452,10 @@ About
   justify-self: center;
 }
 .section-about{
- 
+  background: linear-gradient(-40deg,rgba(233, 239, 255, 0.8) 43%,rgba(66, 83, 108, 0.276) 75%,rgba(127, 54, 204, 0.312));
 }
 .about-center{
+
   padding-top: 5rem ;
   display: grid;
   gap:3rem 2rem;
