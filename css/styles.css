@@ -452,7 +452,7 @@ About
   justify-self: center;
 }
 .section-about{
-  background: linear-gradient(-120deg,rgba(233, 239, 255, 0.317) 43%,rgba(66, 83, 108, 0.436) 75%,rgba(127, 54, 204, 0.297));
+  background: linear-gradient(-deg,rgba(233, 239, 255, 0.317) 43%,rgba(66, 83, 108, 0.436) 75%,rgba(127, 54, 204, 0.297));
 }
 .about-center{
 
@@ -554,13 +554,6 @@ color:var(--clr-white);
   }
 }
 
-/*
-=============== 
-gap
-===============
-*/
-
-
 
 
 
@@ -569,7 +562,10 @@ gap
 Projects
 ===============
 */
-
+.about-project{
+  text-align: center;
+  padding-top: 3rem;
+}
 
 /*
 =============== 
