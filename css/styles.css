@@ -452,7 +452,7 @@ About
   justify-self: center;
 }
 .section-about{
-  background: linear-gradient(180deg,rgba(233, 239, 255, 0.317) 43%,rgba(66, 83, 108, 0.436) 75%,rgba(127, 54, 204, 0.297));
+  background: linear-gradient(210deg,rgba(233, 239, 255, 0.895) 43%,rgba(66, 83, 108, 0.436) 75%,rgba(127, 54, 204, 0.297));
 }
 .about-center{
 
@@ -554,9 +554,6 @@ color:var(--clr-white);
   }
 }
 
-
-
-
 /*
 =============== 
 Projects
@@ -565,6 +562,7 @@ Projects
 .about-project{
   text-align: center;
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .project-text{
   width:85vw;
@@ -621,6 +619,57 @@ Projects
 .project:hover::after{
   opacity: 1;
   transform: scale(0.8);
+}
+@media screen and (min-width:676px){
+  .projects-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .projects-center{
+    grid-template-columns: repeat(3, 1fr);
+  }  
+}
+
+@media screen and (min-width: 1170px){
+  .section-projects{
+    padding-bottom: 3rem;
+  }
+
+  .projects-center{
+    gap:1rem;
+    grid-template-rows: 200px 200px;
+    /* letters takes the are space example a takes double space because is repeated twice */
+    grid-template-areas: 
+    "a b b"
+    "a c d"
+    ;
+  }
+
+   /* image  */
+  .project-img{
+   height: 100%;
+  }
+  .project{
+    height: 100%;
+  }
+
+
+  .project-1{
+    grid-area: a;   
+  }
+  .project-2{
+    grid-area: b;   
+  }
+  .project-3{
+    grid-area: c;   
+  }
+  .project-4{
+    grid-area: d;   
+  }
 }
 
 
