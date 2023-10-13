@@ -767,6 +767,29 @@ Skills
    column-gap: 2rem;
   }
 }
+
+.skills{
+  background: var(--clr-primary-9);
+}
+
+.skills h3{
+  margin: 1.5rem 0;
+  color: var(--clr-primary-1);
+}
+
+.skill{
+  margin-bottom: 1.25rem;
+}
+
+.skill p {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  color: var(--clr-grey-1);
+}
+
+.skill-container{
+ background: var(--clr-white);
+}
 /*
 =============== 
 Timeline
