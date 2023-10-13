@@ -155,11 +155,12 @@ p {
 }
 
 .section-center {
-  width: 100vw;
+  width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
   padding-bottom: 5rem;
 }
+
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
@@ -560,9 +561,6 @@ color:var(--clr-white);
 Projects
 ===============
 */
-.section-projects{
-  background: var(--clr-grey-10);
-}
 
 
 .about-project{
@@ -642,7 +640,7 @@ Projects
 
 @media screen and (min-width: 1170px){
   .section-projects{
-    padding-bottom: 3rem;
+    padding-bottom: 3.3rem;
   }
 
   .projects-center{
@@ -688,8 +686,9 @@ Connect
   min-height: 40vh;
   position: relative;
   padding: 10rem 0rem 0;
-
+  
 }
+
 .video-container{
   position:absolute;
   top:0;
@@ -733,8 +732,6 @@ Connect
     50% 75%,
     0% 75%
   )
-
-  
 }
 
 .video-banner .section-title{
@@ -745,7 +742,17 @@ Connect
   max-width:30rem
 }
 
-
+.connect{
+  -webkit-clip-path:polygon(
+    50% 0%,
+    100% 10%,
+    100% 90%,
+    50% 100%,
+    0% 90%,
+    0% 10%
+  );
+  clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0% 90%,0% 10%);
+}
 
 
 /*
@@ -753,6 +760,13 @@ Connect
 Skills
 ===============
 */
+@media screen and (min-width:768px){
+  .skills-center {
+   display:grid;
+   grid-template-columns:1fr 1fr;
+   column-gap: 2rem;
+  }
+}
 /*
 =============== 
 Timeline
