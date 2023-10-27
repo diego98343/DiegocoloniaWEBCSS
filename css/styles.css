@@ -964,6 +964,31 @@ Single Page
 ===============
 */
 
+.section-title-about {
+  text-align: center;
+}
+
+.single-page{
+  background: var(--clr-primary-10);
+  min-height: calc(100vh - 5rem - 98px);
+}
+
+.page-info {
+  max-width: 700px;
+}
+
+.page-info a{
+  text-transform: uppercase;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+
+.page-info a:hover{
+  text-transform: uppercase;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+
 /*
 =============== 
 Products Page
